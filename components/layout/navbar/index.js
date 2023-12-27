@@ -38,8 +38,8 @@ function NavbarPage() {
               <BsUiRadiosGrid /> Category
             </>
           >
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">Ruby</NavDropdown.Item>
+            <NavDropdown.Item href="#action3">Angular</NavDropdown.Item>
+            <NavDropdown.Item href="#action4">Python</NavDropdown.Item>
             <NavDropdown.Item href="#action4">React</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Java</NavDropdown.Item>
           </NavDropdown>
@@ -82,7 +82,7 @@ function NavbarPage() {
         </NavbarCollapse>
       </Container>
     </Navbar>
-    );
+  );
 }
 
 export default NavbarPage;
