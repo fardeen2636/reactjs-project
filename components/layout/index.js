@@ -2,7 +2,7 @@ import React, { Children } from 'react'
 import HeaderPage from './header'
 import Footer from './footer'
 //  import Navbar from "./navbar"
-function layout({children}) {
+function LayoutPage({children}) {
   return (
    <>
    <HeaderPage/>
@@ -11,4 +11,4 @@ function layout({children}) {
  </> )
 }
 
-export default layout;  
+export default LayoutPage;  

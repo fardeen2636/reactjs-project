@@ -5,11 +5,14 @@ import Layout from '@/components/layout'
 import '@/styles/custom.css'
 import '@/styles/theme.min.css'
 export default function App({ Component, pageProps }) {
-  return (
+  const getLayout = Component.getLayout || ((page) => page);
 
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+//   return (
 
-  )
-}
+//     <Layout>
+//       <Component {...pageProps} />
+//     </Layout>
+
+//   )
+return getLayout(<Component {...pageProps} />);
+ }
