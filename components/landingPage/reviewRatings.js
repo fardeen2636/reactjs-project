@@ -62,7 +62,7 @@ function ReviewRating() {
                     <div className="avatar avatar-sm">
                       <Image
                         className="avatar-img rounded-1"
-                        src="/assets/images/avatar/02.jpg"
+                        src="/assets/images/avatar/05.jpg"
                         alt="avatar"
                         height={100}
                         width={100}
