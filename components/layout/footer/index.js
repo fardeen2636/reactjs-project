@@ -27,8 +27,9 @@ function FooterPage() {
               />
             </a>
             <p className="my-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              earum perspiciatis iusto vel nulla minus.
+            The customer himself, the customer will be able to pursue the adipiscing of the company
+             The majors of them are just insightful or nothing less.
+              
             </p>
             {/* <!-- Social media icon --> */}
             <ul className="list-inline mb-0 mt-3">

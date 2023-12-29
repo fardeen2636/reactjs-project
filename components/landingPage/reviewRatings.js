@@ -39,9 +39,9 @@ function ReviewRating() {
                       <span className="me-1 small">
                         <FaQuoteLeft />
                       </span>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Obcaecati quam repellat molestias! Perspiciatis,
-                      laboriosam facere.
+                      Thank you very much.
+                      Blinded by how it repels troubles!
+                      You see, it's hard to do.
                       <span className="ms-1 small">
                         <FaQuoteRight />
                       </span>
@@ -187,8 +187,8 @@ function ReviewRating() {
                       <span className="me-1 small">
                         <i className="fas fa-quote-left"></i>
                       </span>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Tempore molestiae ex expedita?
+                      The real problem is that it will be followed by adipisicing elit.
+                      A time of trouble from the expedient?
                       <span className="ms-1 small">
                         <i className="fas fa-quote-right"></i>
                       </span>
@@ -203,10 +203,9 @@ function ReviewRating() {
           <div className="col-xl-5 order-1 text-center text-xl-start">
             <h2 className="fs-1">Some valuable feedback from our students</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              libero, iure sit fugiat laborum delectus provident praesentium
-              vel? Veniam praesentium magnam minima odio quis iste dicta quae
-              perferendis velit beatae.
+              The real problem is that it will be followed by adipisicing elit.
+              A free choice, right? I will come to the presence of those who wish
+              to be blessed with the greatest and least hatred of these words.
             </p>
             <a href="#" className="btn btn-primary bg-primary text-white mb-0">
               View Reviews

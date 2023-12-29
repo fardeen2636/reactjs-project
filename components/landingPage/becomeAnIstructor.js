@@ -38,9 +38,9 @@ export default function BecomeAnInstructor() {
                     <div className="col-lg-7">
                       <h3 className="text-white">Become an Instructor</h3>
                       <p className="text-white mb-3 mb-lg-0">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Nihil eum, voluptatum ratione inventore quam
-                        accusantium!
+
+                        It is very important for the customer to pay attention to the adipiscing process.
+                        He is nothing more than an accuser of finding pleasures!
                       </p>
                     </div>
                     <div className="col-lg-5 text-lg-end">

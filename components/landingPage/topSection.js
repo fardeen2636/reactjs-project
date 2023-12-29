@@ -167,11 +167,11 @@ function TopSection() {
 
             <div
               className="p-3 bg-success d-inline-block rounded-4 shadow-lg position-absolute top-50 end-0 translate-middle-y mt-n7 z-index-1 d-none d-md-block"
-              //   style="
-              //   background: url(assets/images/pattern/01.png) no-repeat center
-              //     center;
-              //   background-size: cover;
-              // "
+            //   style="
+            //   background: url(assets/images/pattern/01.png) no-repeat center
+            //     center;
+            //   background-size: cover;
+            // "
             >
               <p className="text-white">Our daily new students</p>
 
