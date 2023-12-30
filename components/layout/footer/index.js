@@ -22,7 +22,7 @@ function FooterPage() {
                 className="dark-mode-item h-40px"
                 src="/assets/images/edulogo1.png"
                 alt="logo"
-                height={150 }
+                height={150}
                 width={80}  
               />
             </a>

@@ -36,10 +36,11 @@ export default function BecomeAnInstructor() {
                 <div className="col-11 mx-auto position-relative">
                   <div className="row align-items-center">
                     <div className="col-lg-7">
-                      <h3 className="text-white">Become an Instructor</h3>
+                      <h3 className="text-white">Become an Instructor!</h3>
                       <p className="text-white mb-3 mb-lg-0">
-                        It is very important for the customer to pay attention to the adipiscing process.
-                        He is nothing more than an accuser of finding pleasures!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nihil eum, voluptatum ratione inventore quam
+                        accusantium!
                       </p>
                     </div>
                     <div className="col-lg-5 text-lg-end">
