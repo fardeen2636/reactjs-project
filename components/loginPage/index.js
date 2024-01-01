@@ -33,8 +33,8 @@ function Login() {
                       <p
                         className={`${styles.contactFormParagh} text-center text-dark`}
                       >
-                        faucibus ultrices facilisis odio amet, luctus
-                        vehicula, turpis elit. Sed placerat.
+                        easy-to-hate ultrices, sorrows
+                        vehicles, low cost aircraft But he invests
                       </p>
                     </div>
                     <div className="col-12 my-2">
