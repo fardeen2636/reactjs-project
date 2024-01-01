@@ -15,15 +15,15 @@ function FooterPage() {
                 className="light-mode-item h-40px"
                 src="/assets/images/edulogo.png"
                 alt="logo"
-                height={150}
-                width={80}
+                height={100}
+                width={100}
               />
               <Image
                 className="dark-mode-item h-40px"
                 src="/assets/images/edulogo1.png"
                 alt="logo"
-                height={150}
-                width={80}  
+                height={100}
+                width={100}  
               />
             </a>
             <p className="my-3">
