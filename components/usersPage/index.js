@@ -4,40 +4,41 @@ import ContentLoader from "react-content-loader";
 import axios from "axios";
 
 import User from "./user";
+import { Button } from "react-bootstrap";
 
 function UsersPage() {
   const [usersData, setUsersData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setLoading] = useState(true);
 
 
   const getUsersData = () => {
     setLoading(true);
     axios
-      .get("https://reqres.in/api/users", {
-        params: {
-          page: 1,
-        },
-      })
+      .get(`https://reqres.in/api/users?page=${currentPage}`)
       .then(function (res) {
         setUsersData(res.data.data);
         setLoading(false);
       })
       .catch(function (error) {
         setLoading(false);
+
         if (error?.response?.status == 400) {
           alert(error.response?.data?.error);
         } else {
           alert(error.message);
         }
+
       });
   };
 
   useEffect(() => {
     getUsersData();
-  }, []);
+  }, [currentPage]);
 
-  console.log("====usersData=====", usersData);
-
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
   return (
     <section className="user-list my-4">
       <div className="container">
@@ -53,11 +54,11 @@ function UsersPage() {
           <div className="col">
             {isLoading ? (
               <ContentLoader
-                speed={3}
+                speed={10}
                 width={400}
                 height={160}
                 viewBox="0 0 400 160"
-                backgroundColor="#d9d9d9"
+                backgroundColor="#d9d9d9" 
                 foregroundColor="#ededed"
               // {...props}
               >
@@ -69,12 +70,32 @@ function UsersPage() {
                 <rect x="8" y="104" rx="4" ry="4" width="35" height="38" />
               </ContentLoader>
             ) : (
-              <div className="candidate-list">
-                {usersData.map((userData) => {
-                  return <User key={userData.id} data={userData} />;
-                })}
+              <>
+                <div className="candidate-list">
+                  {usersData.map((userData) => {
+                    return <User key={userData.id} data={userData} />;
+                  })}
+                </div>
 
-              </div>
+                <div className="pagination">
+                  <Button
+                    variant="dark"
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                  >
+                    Previous
+                  </Button>
+
+                  <div className="m-4">Page {currentPage}</div>
+
+                  <Button
+                    variant="primary"
+                    onClick={() => handlePageChange(currentPage + 1)}>
+                    Next
+                  </Button>
+                </div>
+              </>
+
             )}
           </div>
         </div>

@@ -5,7 +5,7 @@ function User(props) {
   const { data } = props;
 
   return (
-    <div className="candidate-list-box card border-0 mt-4 bg-warning bg-opacity-15">
+    <div className="candidate-list-box card border-0 mt-4 bg-primary bg-opacity-15">
       <div className="p-4 card-body">
         <div className="align-items-center row">
           <div className="col-auto">
