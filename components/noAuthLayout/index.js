@@ -1,14 +1,14 @@
 import React from "react";
-import FooterPage from "../layout/footerPage";
-// import FooterPage from "./footerPage";
+import FooterPage from "../layout/footer";
+
 
 function NoAuthLayout({ children }) {
-	return (
-		<>
-			{children}
-			<FooterPage />
-		</>
-	);
+  return (
+    <>
+      {children}
+      <FooterPage />
+    </>
+  );
 }
 
 export default NoAuthLayout;

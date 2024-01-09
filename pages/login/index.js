@@ -1,10 +1,13 @@
-import React from 'react'
-import LoginPage from "@/components/loginPage"
+import React from "react";
+import LoginComponent from "@/components/loginPage";
+import NoAuthLayout from "@/components/noAuthLayout";
 
 function Login() {
-  return (
-<LoginPage/>
-  )
+  return <LoginComponent />;
 }
+
+// Login.getLayout = function getLayout(page) {
+//   return <NoAuthLayout>{page}</NoAuthLayout>;
+// };
 
 export default Login;
