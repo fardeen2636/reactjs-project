@@ -6,7 +6,7 @@ export default function middleware(req) {
   const AUTH_NOT_ALLOWED_PATHS = ["/login", "/signup"];
   const NO_AUTH_PATHS = ["/", "/home"];
 
-  let loggedin = !!req.cookies.get("gemstoken");
+  let loggedin = !!req.cookies.get("fardeen26");
   const { pathname } = req.nextUrl;
 
   console.log("===loggedin===", loggedin);

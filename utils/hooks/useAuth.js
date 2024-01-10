@@ -24,7 +24,7 @@ function useAuth() {
 
   useEffect(() => {
     // if (!validated) {
-    const isAuth = !!Cookies.get("gemstoken");
+    const isAuth = !!Cookies.get("fardeen26");
 
     setValidated(isAuth);
 
