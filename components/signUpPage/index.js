@@ -34,7 +34,6 @@ function SignUpPage() {
       /// You can handle the successful registration response here
     } catch (error) {
       console.error('Error during registration:', error.message);
-      ///You can handle the error here (display an error message, etc.)
     }
   };
   return (
