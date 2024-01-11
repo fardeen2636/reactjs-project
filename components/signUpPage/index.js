@@ -12,6 +12,7 @@ function SignUpPage() {
     password: '',
     confirmPassword: '',
   });
+  const [isTermsChecked, setTermsChecked] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -20,20 +21,30 @@ function SignUpPage() {
       [name]: value,
     });
   };
+  const handleCheckboxChange = () => {
+    setTermsChecked(!isTermsChecked);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!isTermsChecked) {
+      console.log('Please accept the Terms and Conditions.');
+      return;
+    }
 
     try {
       const response = await axios.post('https://reqres.in/api/register', {
         email: formData.email,
         password: formData.password,
+
       });
       router.replace("/userList");
       console.log('Registration successful:', response.data);
       /// You can handle the successful registration response here
     } catch (error) {
       console.error('Error during registration:', error.message);
+      ///You can handle the error here (display an error message, etc.)
     }
   };
   return (
@@ -94,6 +105,20 @@ function SignUpPage() {
                       onChange={handleInputChange}
                       required
                     />
+                  </div>
+                  <div className="col-12 my-2">
+                    <div className="form-check">
+                      <input
+                        type="checkbox"
+                        className="form-check-input"
+                        id="termsCheckbox"
+                        checked={isTermsChecked}
+                        onChange={handleCheckboxChange}
+                      />
+                      <label className="form-check-label" htmlFor="termsCheckbox">
+                        I agree to the Terms and Conditions
+                      </label>
+                    </div>
                   </div>
                   <div className="col-12 mx-auto my-2 mt-4">
                     <button
