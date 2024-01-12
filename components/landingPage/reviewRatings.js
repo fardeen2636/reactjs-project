@@ -1,8 +1,14 @@
-import Image from 'next/image';
-import React from 'react'
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import { BsCheckCircleFill, BsShieldCheck, BsShieldFillCheck } from "react-icons/bs";
-import Ratings from './ratings';
+import Image from "next/image";
+import React from "react";
+import {
+  FaQuoteLeft,
+  FaQuoteRight,
+  FaStar,
+  FaStarHalf,
+  FaStarHalfAlt,
+} from "react-icons/fa";
+import Ratings from "./ratings";
+import { BsShieldFillCheck } from "react-icons/bs";
 
 function ReviewRating() {
   return (
@@ -20,19 +26,22 @@ function ReviewRating() {
 
                 <div className="bg-body shadow text-center p-4 rounded-3 position-relative mb-5 mb-md-0">
                   <div className="avatar avatar-xl mb-3">
-                    <Image className="avatar-img rounded-circle"
+                    <Image
+                      className="avatar-img rounded-circle"
                       src="/assets/images/avatar/01.jpg"
                       alt="avatar"
                       height={100}
-                      width={100} />
-
+                      width={100}
+                    />
                   </div>
                   <blockquote>
                     <p>
                       <span className="me-1 small">
                         <FaQuoteLeft />
                       </span>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quam repellat molestias! Perspiciatis, laboriosam facere.
+                      Thank you very much.
+                      Blinded by how it repels troubles!
+                      You see, it's hard to do.
                       <span className="ms-1 small">
                         <FaQuoteRight />
                       </span>
@@ -46,60 +55,60 @@ function ReviewRating() {
               <div className="col-md-5 mt-5 mt-md-0 d-none d-md-block">
                 <div className="bg-body shadow p-4 rounded-3 d-inline-block position-relative">
                   <div className="icon-lg bg-warning rounded-circle position-absolute top-0 start-100 translate-middle">
-                    <BsShieldFillCheck className='text-dark' />
+                    <BsShieldFillCheck className="text-dark" />
                   </div>
                   <h6 className="mb-3">100+ Verified Mentors</h6>
                   <div className="d-flex align-items-center mb-3">
                     <div className="avatar avatar-sm">
-                      <Image className="avatar-img rounded-1"
-                        src="/assets/images/avatar/04.jpg"
+                      <Image
+                        className="avatar-img rounded-1"
+                        src="/assets/images/avatar/05.jpg"
                         alt="avatar"
                         height={100}
-                        width={100} />
-
+                        width={100}
+                      />
                     </div>
                     <div className="ms-2">
-                      <h6 className="mb-0">Lori Stevens</h6>
+                      <h6 className="mb-0">Smith Steven</h6>
                       <p className="mb-0 small">Tutor of physic</p>
                     </div>
                   </div>
 
                   <div className="d-flex align-items-center mb-3">
                     <div className="avatar avatar-sm">
-                      <Image className="avatar-img rounded-1"
+                      <img
+                        className="avatar-img rounded-1"
                         src="/assets/images/avatar/04.jpg"
                         alt="avatar"
-                        height={100}
-                        width={100} />
-
+                      />
                     </div>
                     <div className="ms-2">
-                      <h6 className="mb-0">Billy Vasquez</h6>
+                      <h6 className="mb-0">Mickey Patrick</h6>
                       <p className="mb-0 small">Tutor of chemistry</p>
                     </div>
                   </div>
 
                   <div className="d-flex align-items-center">
                     <div className="avatar avatar-sm">
-                      <Image className="avatar-img rounded-1"
+                      <img
+                        className="avatar-img rounded-1"
                         src="/assets/images/avatar/02.jpg"
                         alt="avatar"
-                        height={100}
-                        width={100} />
-
+                      />
                     </div>
                     <div className="ms-2">
-                      <h6 className="mb-0">Larry Lawson</h6>
+                      <h6 className="mb-0">Steve Jobs</h6>
                       <p className="mb-0 small">Tutor of technology</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="row mt-5 mt-xl-0">
               <div className="col-7 mt-0 mt-xl-5 text-end position-relative z-index-1 d-none d-md-block">
                 <figure className="fill-danger position-absolute top-0 start-50 mt-n7 ms-6 ps-3 pt-2 z-index-n1 d-none d-lg-block">
-                  <svg enable-background="new 0 0 160.7 159.8" height="180px">
+                  <svg enableBackground="new 0 0 160.7 159.8" height="180px">
                     <path d="m153.2 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2-0.1-1.2 0.9-2.2 2.1-2.2z" />
                     <path d="m116.4 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
                     <path d="m134.8 114.5c1.2 0 2.1 1 2.1 2.2s-1 2.2-2.1 2.2c-1.2 0-2.1-1-2.1-2.2s0.9-2.2 2.1-2.2z" />
@@ -148,17 +157,16 @@ function ReviewRating() {
                   </svg>
                 </figure>
 
-                <div className="p-3 bg-primary d-inline-block rounded-4 shadow-lg text-center"
-                  style={{ background: "url(assets/images/pattern/02.png)no-repeat center center", backgroundSize: "cover" }}>
-                  <h5 className="text-white mb-0">4.5/5.0</h5>
-                  {/* <ul className="list-inline mb-2">
-								<li className="list-inline-item me-0 small"><i className="fas fa-star text-warning"></i></li>
-								<li className="list-inline-item me-0 small"><i className="fas fa-star text-warning"></i></li>
-								<li className="list-inline-item me-0 small"><i className="fas fa-star text-warning"></i></li>
-								<li className="list-inline-item me-0 small"><i className="fas fa-star text-warning"></i></li>
-								<li className="list-inline-item me-0 small"><i className="fas fa-star-half-alt text-warning"></i></li>
-							</ul> */}
-                  <Ratings stars={4.5} />
+                <div
+                  className="p-3 bg-primary d-inline-block rounded-4 shadow-lg text-center"
+                  style={{
+                    background:
+                      "url(assets/images/pattern/02.png) no-repeat center center",
+                    backgroundSize: "cover",
+                  }}
+                >
+                  <h5 className="text-white mb-0">3.5/5.0</h5>
+                  <Ratings stars={3.5} />
                   <p className="text-white mb-0">Based on 3265 ratings</p>
                 </div>
               </div>
@@ -166,25 +174,27 @@ function ReviewRating() {
               <div className="col-md-5 mt-n6 mb-0 mb-md-5">
                 <div className="bg-body shadow text-center p-4 rounded-3">
                   <div className="avatar avatar-xl mb-3">
-                    <Image className="avatar-img rounded-circle"
+                    <Image
+                      className="avatar-img rounded-circle"
                       src="/assets/images/avatar/03.jpg"
                       alt="avatar"
                       height={100}
-                      width={100} />
-
+                      width={100}
+                    />
                   </div>
                   <blockquote>
                     <p>
                       <span className="me-1 small">
-                        <FaQuoteLeft />
+                        <i className="fas fa-quote-left"></i>
                       </span>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore molestiae ex expedita?
+                      The real problem is that it will be followed by adipisicing elit.
+                      A time of trouble from the expedient?
                       <span className="ms-1 small">
-                        <FaQuoteRight />
+                        <i className="fas fa-quote-right"></i>
                       </span>
                     </p>
                   </blockquote>
-                  <Ratings stars={3.5} />
+                  <Ratings stars={2.5} />
                   <h6 className="mb-0">Dennis Barrett</h6>
                 </div>
               </div>
@@ -192,15 +202,18 @@ function ReviewRating() {
           </div>
           <div className="col-xl-5 order-1 text-center text-xl-start">
             <h2 className="fs-1">Some valuable feedback from our students</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero, iure sit fugiat laborum delectus provident praesentium vel? Veniam praesentium magnam minima odio quis iste dicta quae perferendis velit beatae.</p>
-            <a href="#" className="btn btn-primary bg-primary text-white mb-0">View Reviews</a>
+            <p>
+              The real problem is that it will be followed by adipisicing elit.
+              A free choice, right? I will come to the presence of those who wish
+              to be blessed with the greatest and least hatred of these words.
+            </p>
+            <a href="#" className="btn btn-primary bg-primary text-white mb-0">
+              View Reviews
+            </a>
           </div>
         </div>
       </div>
-
-
     </section>
-
   );
 }
 
