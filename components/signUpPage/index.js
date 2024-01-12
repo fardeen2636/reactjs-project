@@ -49,9 +49,9 @@ function SignUpPage() {
   };
   return (
     <section className="p-0">
-      <div className="container">
-        <div className="row d-flex justify-content-center">
-          <div className="col-lg-5 col-md-7 col-12 mt-4">
+      <div className="container my-3 pt-5">
+        <div className="row d-flex justify-content-center mt-3">
+          <div className="col-lg-5 col-md-7 col-12">
             <form onSubmit={handleSubmit}>
               <div
                 className={`${styles.contactFormWrapper} bg-info bg-opacity-10 p-md-5 p-2 pt-4 rounded`}

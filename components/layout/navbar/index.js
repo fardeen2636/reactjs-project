@@ -52,7 +52,7 @@ function NavbarPage() {
               Home
             </Link>
             <Nav.Link href="/users">User List</Nav.Link>
-            <Nav.Link href="#pricing">Profile</Nav.Link>
+            <Nav.Link href="/profile">Profile</Nav.Link>
           </Nav>
 
           <div className="nav my-3 my-xl-0 px-md-4 flex-nowrap align-items-center">
