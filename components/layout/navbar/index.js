@@ -72,16 +72,22 @@ function NavbarPage() {
           </div>
 
           <Nav>
-            <Link href="./signUp" className="nav-link">
-              SignUp
-            </Link>
-            <Link href="./login" className="nav-link">
-              Login
-            </Link>
-          </Nav>
-        </NavbarCollapse>
-      </Container>
-    </Navbar>
+                <Link href="/signup" className="nav-link">
+                  Signup
+                </Link> 
+                <Link href="/login" className="nav-link">
+                  Login
+                </Link>
+                <Link href="/counter" className="nav-link">
+                  Counter
+                </Link>
+                <Link href="/number" className="nav-link">
+                  Number
+                </Link>
+              </Nav>
+            </NavbarCollapse>
+          </Container>
+        </Navbar>
   );
 }
 
