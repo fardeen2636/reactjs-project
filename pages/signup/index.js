@@ -1,7 +1,7 @@
 import React from "react";
 import SignUpPage from "@/components/signUpPage";
-function SignUp() {
+function Signup() {
   return <SignUpPage />;
 }
 
-export default SignUp;
+export default Signup;

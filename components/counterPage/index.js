@@ -18,7 +18,7 @@ const CounterPage = ({ page }) => {
 
   return (
     <center style={{ marginTop: "20px", marginBottom: "20px" }}>
-      <Button onClick={() => handleClick(-1)}> - </Button>
+      <Button  onClick={() => handleClick(-1)}> - </Button>
       <h2>
         {page} :: {allData.countData}
       </h2>
