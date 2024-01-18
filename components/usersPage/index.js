@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import User from "./user";
 import { loadData } from "@/reducers/usersSlice";
 import ContentLoader from "react-content-loader";
-import { Button } from "react-bootstrap";
-import MyPagination from "./myPagination";
 import { useDispatch, useSelector } from "react-redux";
+import NextButton from "./nextButton";
 
 function UsersPage() {
   // const [usersData, setUsersData] = useState([]);
@@ -15,7 +13,7 @@ function UsersPage() {
   const dispatch = useDispatch();
   const userObj = useSelector((state) => state.users);
 
-  const getUsersData = (page = 1) => {
+  const getUsersData = ({ page }) => {
     setIsLoading(true);
 
     axios
@@ -44,7 +42,7 @@ function UsersPage() {
   };
 
   useEffect(() => {
-    getUsersData();
+    getUsersData({ page: 1});
   }, []);
 
   const Loader1 = () => (
@@ -144,23 +142,18 @@ function UsersPage() {
                   <User key={userData.id} data={userData} />
                 ))}
             </div>
-            {/* <div className="pagination">
-              <Button
-                variant="dark"
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
-              >
-                Previous
-              </Button>
 
-              <div className="m-4">Page {currentPage}</div>
+            <NextButton
+          totalPages={userObj.totalPages}
+          getUsersData={getUsersData}
+          currentPage={userObj.currentPage}
+        />
 
-              <Button
-                variant="primary"
-                onClick={() => handlePageChange(currentPage + 1)}>
-                Next
-              </Button>
-            </div> */}
+             {/* <MyPagination
+          totalPages={userObj.totalPages}
+          currentPage={userObj.currentPage}
+          getUsersData={getUsersData}
+        /> */}
           </div>
         </div>
       </div>

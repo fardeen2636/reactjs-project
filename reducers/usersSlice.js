@@ -5,10 +5,13 @@ export const usersSlice = createSlice({
   initialState: { data: [], totalPages: 0, currentPage: 1 },
   reducers: {
     loadData: (state, action) => {
-      // console.log("====state=====", state, action.payload);
-      state.data = action.payload.data;
+      if (action.payload.page = 1) {
+        state.data = action.payload.data;
+      } else {
+        state.data = [...state.data, ...action.payload.data];
+      }
       state.totalPages = action.payload.total_pages;
-      state.currentPage = action.payload.currentPage;
+      state.currentPage = action.payload.page;
     },
   },
 });
