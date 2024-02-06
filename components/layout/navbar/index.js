@@ -23,7 +23,7 @@ function NavbarPage() {
     <Navbar data-bs-theme="primary">
       <Container fluid className="px-3 px-xl-5">
         <Navbar.Brand href="#">
-          <Image
+          <img  
             src="/assets/images/logo.png"
             width={100}
             height={50}

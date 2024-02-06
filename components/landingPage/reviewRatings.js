@@ -41,7 +41,7 @@ function ReviewRating() {
                       </span>
                       Thank you very much.
                       Blinded by how it repels troubles!
-                      You see, it's hard to do.
+                      You see, it&apos;s hard to do.
                       <span className="ms-1 small">
                         <FaQuoteRight />
                       </span>

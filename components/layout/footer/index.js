@@ -10,26 +10,11 @@ function FooterPage() {
           {/* <!-- Widget 1 START --> */}
           <div className="col-lg-3">
             {/* <!-- logo --> */}
-            <a className="me-0" href="index.html">
-              <Image
-                className="light-mode-item h-40px"
-                src="/assets/images/edulogo.png"
-                alt="logo"
-                height={100}
-                width={100}
-              />
-              <Image
-                className="dark-mode-item h-40px"
-                src="/assets/images/edulogo1.png"
-                alt="logo"
-                height={100}
-                width={100}  
-              />
-            </a>
+
             <p className="my-3">
-            The customer himself, the customer will be able to pursue the adipiscing of the company
-             The majors of them are just insightful or nothing less.
-              
+              The customer himself, the customer will be able to pursue the adipiscing of the company
+              The majors of them are just insightful or nothing less.
+
             </p>
             {/* <!-- Social media icon --> */}
             <ul className="list-inline mb-0 mt-3">
