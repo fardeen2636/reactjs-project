@@ -78,12 +78,12 @@ function NavbarPage() {
                 <Link href="/login" className="nav-link">
                   Login
                 </Link>
-                <Link href="/counter" className="nav-link">
+                {/* <Link href="/counter" className="nav-link">
                   Counter
                 </Link>
                 <Link href="/number" className="nav-link">
                   Number
-                </Link>
+                </Link> */}
               </Nav>
             </NavbarCollapse>
           </Container>
